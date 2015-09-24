@@ -25,6 +25,23 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        let url = NSURL(string: "http://www.weather-forecast.com/locations/San-Diego/forecasts/latest")!
+        
+        let task = NSURLSession.sharedSession().dataTaskWithURL(url) { (data, response, error) -> Void in
+            
+            if let urlContent = data {
+                
+                let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
+                
+                print(webContent)
+                
+            }
+            
+        }
+        
+        task.resume()
+        
     }
 
     override func didReceiveMemoryWarning() {
