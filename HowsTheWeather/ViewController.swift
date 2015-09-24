@@ -34,7 +34,31 @@ class ViewController: UIViewController {
                 
                 let webContent = NSString(data: urlContent, encoding: NSUTF8StringEncoding)
                 
-                print(webContent)
+                let websiteArray = webContent?.componentsSeparatedByString("3 Day Weather Forecast Summary:</b><span class=\"read-more-small\"><span class=\"read-more-content\"> <span class=\"phrase\">")
+                
+                if websiteArray!.count > 0 {
+                    
+                    print(websiteArray![1])
+                    
+                    let weatherArray = websiteArray![1].componentsSeparatedByString("</span></span></span></p><div class=\"forecast-cont\">")
+                    
+                    if weatherArray.count > 0 {
+                    
+                    let weatherSummary = weatherArray[0]
+                        
+                    dispatch_async(dispatch_get_main_queue(), { () -> Void in
+                        
+                        self.resultLabel.text = weatherSummary
+                        
+                    })
+                        
+                    
+                    
+                        
+                    }
+                    
+                }
+                
                 
             }
             
