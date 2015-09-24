@@ -46,6 +46,9 @@
                                     <constraint firstAttribute="height" constant="30" id="77I-bQ-9Ci"/>
                                 </constraints>
                                 <state key="normal" title="How's the Weather?"/>
+                                <connections>
+                                    <action selector="findWeather:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xtC-JR-sua"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bP-yz-ILd">
                                 <rect key="frame" x="164" y="265" width="272" height="142"/>
@@ -86,6 +89,10 @@
                             <constraint firstAttribute="trailingMargin" secondItem="WuZ-Ej-YdL" secondAttribute="trailing" constant="-20" id="yei-fP-flm"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="cityTextField" destination="xpA-ks-kDo" id="218-G5-Mku"/>
+                        <outlet property="resultLabel" destination="4bP-yz-ILd" id="lNJ-C6-fK7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
