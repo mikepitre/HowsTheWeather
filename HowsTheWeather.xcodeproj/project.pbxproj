@@ -12,6 +12,7 @@
 		8FB94A651BB38A9A00E2D396 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB94A631BB38A9A00E2D396 /* Main.storyboard */; };
 		8FB94A671BB38A9A00E2D396 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FB94A661BB38A9A00E2D396 /* Assets.xcassets */; };
 		8FB94A6A1BB38A9A00E2D396 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB94A681BB38A9A00E2D396 /* LaunchScreen.storyboard */; };
+		8FB94A741BB38C5500E2D396 /* dawn-landscape-mountains-nature.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8FB94A731BB38C5500E2D396 /* dawn-landscape-mountains-nature.jpg */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		8FB94A661BB38A9A00E2D396 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FB94A691BB38A9A00E2D396 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8FB94A6B1BB38A9A00E2D396 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8FB94A731BB38C5500E2D396 /* dawn-landscape-mountains-nature.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "dawn-landscape-mountains-nature.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				8FB94A5F1BB38A9A00E2D396 /* AppDelegate.swift */,
 				8FB94A611BB38A9A00E2D396 /* ViewController.swift */,
 				8FB94A631BB38A9A00E2D396 /* Main.storyboard */,
+				8FB94A731BB38C5500E2D396 /* dawn-landscape-mountains-nature.jpg */,
 				8FB94A661BB38A9A00E2D396 /* Assets.xcassets */,
 				8FB94A681BB38A9A00E2D396 /* LaunchScreen.storyboard */,
 				8FB94A6B1BB38A9A00E2D396 /* Info.plist */,
@@ -125,6 +128,7 @@
 				8FB94A6A1BB38A9A00E2D396 /* LaunchScreen.storyboard in Resources */,
 				8FB94A671BB38A9A00E2D396 /* Assets.xcassets in Resources */,
 				8FB94A651BB38A9A00E2D396 /* Main.storyboard in Resources */,
+				8FB94A741BB38C5500E2D396 /* dawn-landscape-mountains-nature.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

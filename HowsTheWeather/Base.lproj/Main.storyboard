@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HowsTheWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +16,83 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="dawn-landscape-mountains-nature.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="WuZ-Ej-YdL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a city..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9J-7y-6f5">
+                                <rect key="frame" x="251" y="151" width="99" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="9Bl-0G-c5Y"/>
+                                    <constraint firstAttribute="width" constant="99" id="xc4-ei-myO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Eg. Austin, San Diego" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xpA-ks-kDo">
+                                <rect key="frame" x="164" y="189" width="272" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="GUw-Nw-tW8"/>
+                                    <constraint firstAttribute="width" constant="272" id="YcO-ND-lZ5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBF-5H-YHG">
+                                <rect key="frame" x="231" y="227" width="138" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="138" id="4U9-2H-U9J"/>
+                                    <constraint firstAttribute="height" constant="30" id="77I-bQ-9Ci"/>
+                                </constraints>
+                                <state key="normal" title="How's the Weather?"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4bP-yz-ILd">
+                                <rect key="frame" x="164" y="265" width="272" height="142"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="142" id="9AO-SY-uIG"/>
+                                    <constraint firstAttribute="width" constant="272" id="Uzr-8G-uxP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How's the Weather?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PXK-rC-JH0">
+                                <rect key="frame" x="164" y="66" width="272" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="642-iA-aWk"/>
+                                    <constraint firstAttribute="width" constant="272" id="VaO-oO-kq0"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="30"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="S9J-7y-6f5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DeJ-AT-APA"/>
+                            <constraint firstItem="xpA-ks-kDo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GnX-7h-GA2"/>
+                            <constraint firstItem="UBF-5H-YHG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JZB-1k-AEr"/>
+                            <constraint firstItem="4bP-yz-ILd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OFu-u3-6In"/>
+                            <constraint firstItem="UBF-5H-YHG" firstAttribute="top" secondItem="xpA-ks-kDo" secondAttribute="bottom" constant="8" id="OTc-zG-AA0"/>
+                            <constraint firstItem="4bP-yz-ILd" firstAttribute="top" secondItem="UBF-5H-YHG" secondAttribute="bottom" constant="8" id="PCT-fN-Wji"/>
+                            <constraint firstItem="PXK-rC-JH0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ReW-rg-CdR"/>
+                            <constraint firstItem="WuZ-Ej-YdL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="S5e-Sf-eK0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WuZ-Ej-YdL" secondAttribute="bottom" id="V6s-fy-AYB"/>
+                            <constraint firstItem="PXK-rC-JH0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="46" id="fdP-tq-Tl5"/>
+                            <constraint firstItem="S9J-7y-6f5" firstAttribute="top" secondItem="PXK-rC-JH0" secondAttribute="bottom" constant="50" id="j55-5V-dvV"/>
+                            <constraint firstItem="xpA-ks-kDo" firstAttribute="top" secondItem="S9J-7y-6f5" secondAttribute="bottom" constant="17" id="k4W-yT-AKV"/>
+                            <constraint firstItem="WuZ-Ej-YdL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" id="vlS-3i-Ii3"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WuZ-Ej-YdL" secondAttribute="trailing" constant="-20" id="yei-fP-flm"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="380" y="305"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="dawn-landscape-mountains-nature.jpg" width="4896" height="3264"/>
+    </resources>
 </document>
